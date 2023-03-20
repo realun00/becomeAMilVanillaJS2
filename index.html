@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="game.js"></script>
+    <title>Who wants to be a millionaire</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="starter">
+        <img src="logo.png" alt="Logo" />
+        <h2>Welcome to</h2>
+        <h1>Who wants to be a millionaire?</h1>
+        <form class="startGame">
+          <input
+            type="text"
+            placeholder="Please, enter username"
+            class="username_input"
+          /><br />
+          <button class="playButton">Start game</button>
+        </form>
+      </div>
+    </div>
+    <div class="inGame">
+      <div class="jokerContainer">
+        <p class="jkr" />
+      </div>
+      <div class="winningsContainer">
+        <div class="jokers">
+          <button id="ffJoker" class="jokerBtn">50/50</button>
+          <button id="callJoker" class="jokerBtn">Call</button>
+          <button id="askJoker" class="jokerBtn">Ask</button>
+        </div>
+        <ul class="winnings" />
+      </div>
+      <div class="qContainer">
+        <p class="questionBox" />
+        <div class="answersBox" />
+      </div>
+    </div>
+  </body>
+</html>

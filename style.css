@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 80.5%;
+  box-sizing: border-box;
+  min-height: 100%; /* make sure it is at least as tall as the viewport */
+  position: relative;
+}
+
+body {
+  font-family: system-ui;
+  color: #555;
+  background-color: rgba(99, 39, 179, 0.986);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.starter {
+  position: absolute;
+  margin: 0 auto;
+  height: 900px;
+  width: 800px;
+  padding: 5px;
+}
+
+.starter img {
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.starter h1,
+h2 {
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+
+.username_input {
+  height: 40px;
+  width: 300px;
+  margin: auto;
+  margin-top: 15px;
+  display: block;
+  border-radius: 9px;
+  border: 0px;
+  text-align: center;
+}
+
+.playButton {
+  height: 50px;
+  width: 80px;
+  margin: auto;
+  display: block;
+  border-radius: 14px;
+  color: #fff;
+  background-color: rgba(99, 39, 179, 0.986);
+  border-color: #fff;
+}
+
+.playButton:focus {
+  outline: 0;
+}
+
+.inGame {
+  background-image: url("inGame.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: scroll;
+  display: none;
+}
+
+.winningsContainer {
+  float: right;
+  margin-top: 15px;
+  margin-right: 1%;
+  width: 300px;
+  height: 600px;
+  background-color: #1d0088;
+  opacity: 0.7;
+  border-radius: 15px;
+  color: rgb(255, 102, 0);
+  padding-top: 25px;
+  padding-left: 0px;
+  text-align: left;
+  overflow: hidden;
+}
+.jokerContainer {
+  float: left;
+  margin-top: 15px;
+  margin-left: 1%;
+  width: 40%;
+  height: 600px;
+  background-color: #1d0088;
+  opacity: 0.9;
+  border-radius: 15px;
+  color: rgb(255, 102, 0);
+  padding-top: 25px;
+  padding-left: 0px;
+  text-align: left;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.winningsContainer ul {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.winningsContainer li {
+  font-size: 20px;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.jokers {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-left: 60px;
+}
+
+.jokerBtn {
+  height: 35px;
+  min-width: 60px;
+  background-color: inherit;
+  color: #fff;
+  border-radius: 50%;
+  border: 3px solid rgb(0, 47, 255);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.jokerBtn:hover {
+  cursor: pointer;
+}
+
+.jokerBtn:focus {
+  border-radius: 50%;
+  border: 3px solid rgb(0, 47, 255);
+  outline: 0;
+}
+
+.jokerBtn:active {
+  border: 0;
+}
+
+.jkr {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+
+.qContainer {
+  float: left;
+  margin-top: 10px;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 10px;
+  width: 98%;
+  min-height: 300px;
+  opacity: 0.9;
+}
+
+.questionBox {
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  background-color: #1d0088;
+  min-height: 90px;
+  margin: auto;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* .answers {
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    min-height: 120px;
+    margin: auto;
+    margin-top: 60px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+} */
+
+.answersBox {
+  position: relative;
+  text-align: center;
+  min-height: 120px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-columns: auto auto;
+}
+
+.correctAnswer {
+  background-color: rgb(5, 255, 17) !important;
+  color: #fe642e !important;
+}
+
+.grid-item {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30%;
+  background-color: #1d0088;
+  width: 98%;
+  height: 80px;
+  margin: auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item:hover {
+  background-color: #ffd000;
+  cursor: pointer;
+}
+
+.grid-item:focus {
+  outline: 0;
+  background-color: #ffd000;
+}
